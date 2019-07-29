@@ -13,6 +13,8 @@ h1,h2,h3,
 h4,h5,h6 {
     padding: 5px;
     background-color: rgba(101,155,242,.2);
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
 }
 
 #currentWord {
@@ -21,13 +23,25 @@ h4,h5,h6 {
 #guessedLetters {
     height: auto;
 }
-#pressKeyTryAgain
-{ display: none;}
+#pressKeyTryAgain {
+     display: none;
+    margin-top: 35%;
+    background: lime;
+    box-shadow: 0 0 20px white;
+    color: black;
+}
 .gameplay-column {
     padding-top: 20px;
-    border: 3px dashed #fff;
+    border: 3px solid #fff;
     text-align: center;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px white;
     margin-top: 20px;
     min-height: 500px;
     background-color: rgba(255, 255, 255, .3);
+}
+.gameplay-column:first-of-type {
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
